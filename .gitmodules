@@ -1,0 +1,9 @@
+[submodule "themes/phoenix-dark-pink"]
+	path = themes/phoenix-dark-pink
+	url = https://github.com/j0ni/phoenix-dark-pink
+[submodule "modes/ld-mode"]
+	path = modes/ld-mode
+	url = https://github.com/spenczar/ld-mode
+[submodule "modes/glsl-mode"]
+	path = modes/glsl-mode
+	url = https://github.com/jimhourihan/glsl-mode
