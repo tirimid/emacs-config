@@ -53,4 +53,7 @@
                 c-backslash-column -1
                 c-backslash-max-column -1)
   (smart-tabs-advice c-indent-line c-basic-offset)
-  (smart-tabs-advice c-indent-region c-basic-offset))
+  (smart-tabs-advice c-indent-region c-basic-offset)
+  (add-hook 'c-mode-common-hook
+			(lambda ()
+			  (c-set-offset 'inextern-lang 0))))
