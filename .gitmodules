@@ -7,3 +7,6 @@
 [submodule "modes/glsl-mode"]
 	path = modes/glsl-mode
 	url = https://github.com/jimhourihan/glsl-mode
+[submodule "themes/replace-colorthemes"]
+	path = themes/replace-colorthemes
+	url = https://github.com/emacs-jp/replace-colorthemes
