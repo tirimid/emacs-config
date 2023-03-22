@@ -56,4 +56,5 @@
   (smart-tabs-advice c-indent-region c-basic-offset)
   (add-hook 'c-mode-common-hook
 			(lambda ()
-			  (c-set-offset 'inextern-lang 0))))
+			  (c-set-offset 'inextern-lang 0)
+			  (c-set-offset 'innamespace 0))))

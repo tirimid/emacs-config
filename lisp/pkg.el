@@ -1,10 +1,13 @@
+(defun install-pkg-list (lst)
+  (dolist (pkg lst)
+	(unless (package-installed-p pkg)
+	  (package-install pkg))))
+
 (defun setup-packages ()
-  (setq my-config-pkg-list '(rust-mode go-mode))
   (add-to-list 'package-archives
                '("melpa-stable" . "https://stable.melpa.org/packages/") t)
   (package-initialize)
   (unless package-archive-contents
-	(package-refresh-contents))
-  (dolist (pkg my-config-pkg-list)
-	(unless (package-installed-p pkg)
-	  (package-install pkg))))
+    (package-refresh-contents))
+  (install-pkg-list theme-package-list)
+  (install-pkg-list mode-package-list))

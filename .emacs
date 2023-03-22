@@ -1,10 +1,10 @@
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
 (require 'cl-lib)
 (require 'package)
 
-(add-to-list 'load-path "~/.emacs.d/lisp")
-
-(load "langmodes.el")
 (load "themehack.el")
+(load "langmodes.el")
 (load "style.el")
 (load "pkg.el")
 
@@ -18,9 +18,10 @@
 
 (setup-packages)
 (add-all-theme-directories)
-(load-theme 'phoenix-dark-pink t)
 (setup-emacs-aesthetic-changes)
 (setup-general-code-style)
 (remove-nuisance)
 (setup-all-lang-modes)
 (electric-pair-mode)
+
+(load-theme 'lawrence t)

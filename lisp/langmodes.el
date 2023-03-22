@@ -1,3 +1,5 @@
+(defvar mode-package-list '(rust-mode go-mode))
+
 (defun setup-lang-mode (mode-name &rest exts)
   (autoload mode-name (format "%s" mode-name) nil t)
   (dolist (ext exts)
