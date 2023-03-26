@@ -47,7 +47,8 @@
 
 (defun setup-general-code-style ()
   (setq c-basic-offset 4
-        c-default-style "linux")
+        c-default-style "linux"
+		cua-auto-tabify-rectangles nil)
   (setq-default tab-width 4
                 indent-tabs-mode t
                 c-backslash-column -1
