@@ -1,3 +1,6 @@
+(defvar emacs-config-theme 'desert)
+(defvar emacs-config-font "Hermit-9")
+
 (defadvice align (around smart-tabs activate)
   (let ((indent-tabs-mode nil)) ad-do-it))
 
@@ -35,7 +38,7 @@
         (t ad-do-it)))))
 
 (defun setup-emacs-aesthetic-changes ()
-  (setq default-frame-alist '((font . "Source Code Pro-9"))
+  (setq default-frame-alist `((font . ,emacs-config-font))
         mouse-wheel-scroll-amount '(1 ((shift) . 1))
         scroll-step 1)
   (setq-default fill-column 80
@@ -43,7 +46,8 @@
   (menu-bar-mode -1)
   (tool-bar-mode -1)
   (global-display-line-numbers-mode)
-  (global-display-fill-column-indicator-mode 1))
+  (global-display-fill-column-indicator-mode 1)
+  (load-theme emacs-config-theme t))
 
 (defun setup-general-code-style ()
   (setq c-basic-offset 4

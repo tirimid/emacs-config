@@ -10,3 +10,6 @@
 [submodule "themes/replace-colorthemes"]
 	path = themes/replace-colorthemes
 	url = https://github.com/emacs-jp/replace-colorthemes
+[submodule "fonts/hermit"]
+	path = fonts/hermit
+	url = https://github.com/pcaro90/hermit.git

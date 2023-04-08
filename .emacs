@@ -23,5 +23,3 @@
 (remove-nuisance)
 (setup-all-lang-modes)
 (electric-pair-mode)
-
-(load-theme 'lawrence t)
